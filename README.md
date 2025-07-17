@@ -1,74 +1,38 @@
-<<<<<<< HEAD
-# Photo-Booth
-=======
-# Getting Started with Create React App
+# 📸 Photo-Booth
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fun React app that lets users take a 4 photo strip with their webcam. It uses voice detection to trigger photos when you say “Go” and includes a manual capture button. The photos are combined vertically into a single downloadable strip.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+# 💻 How It Works
+Tech: React functional components + hooks
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Camera: Uses navigator.mediaDevices.getUserMedia to show live video
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Voice: Web Speech API (SpeechRecognition) listens for “Go” to start countdown & capture
 
-### `npm test`
+Capture: Countdown (3-2-1), then take 4 photos in a row
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Canvas: Combines 4 images vertically into one strip for display & download
 
-### `npm run build`
+UI: Retro theme with SVG decorations, responsive for desktop & mobile
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# ⚙️ Optimizations
+Minimizes unnecessary React re-renders with hooks
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Stops camera stream on component unmount to free resources
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Handles permission errors gracefully with user feedback
 
-### `npm run eject`
+Uses lightweight SVGs instead of heavy images
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Responsive layout for different screen sizes
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# ✔️ Lessons Learned
+Powerful browser APIs enable rich multimedia apps without backend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Small UI touches (countdown, animations, SVGs) improve user engagement
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+React hooks simplify managing camera, countdown, and photo states but require careful dependency management
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 7bab639 (Initialize project using Create React App)
+Testing responsiveness on mobile and desktop is important
