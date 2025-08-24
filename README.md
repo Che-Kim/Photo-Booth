@@ -1,5 +1,6 @@
 # 📸 Photo-Booth
 
+Photobooth on your phone!
 A fun React app that lets users take a 4 photo strip with their webcam. It uses voice detection to trigger photos when you say “Go” and includes a manual capture button. The photos are combined vertically into a single downloadable strip.
 
 https://photo-booth-pearl.vercel.app/
