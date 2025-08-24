@@ -7,7 +7,7 @@ A fun React app that lets users take a 4 photo strip with their webcam. It uses 
 https://photo-booth-pearl.vercel.app/
 
 
-# 💻 How It Works
+### 💻 How It Works
 - Tech: React functional components + hooks
 
 - Camera: Uses navigator.mediaDevices.getUserMedia to show live video
@@ -20,7 +20,7 @@ https://photo-booth-pearl.vercel.app/
 
 - UI: Retro theme with SVG decorations, responsive for desktop & mobile
 
-# ⚙️ Optimizations
+### ⚙️ Optimizations
 - Minimizes unnecessary React re-renders with hooks
 
 - Stops camera stream on component unmount to free resources
@@ -31,7 +31,7 @@ https://photo-booth-pearl.vercel.app/
 
 - Responsive layout for different screen sizes
 
-# ✔️ Lessons Learned
+### ✔️ Lessons Learned
 - Powerful browser APIs enable rich multimedia apps without backend
 
 - Small UI touches (countdown, animations, SVGs) improve user engagement
